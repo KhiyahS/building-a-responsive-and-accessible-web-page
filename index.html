@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accessible Design Co.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header role="banner">
+    <nav role="navigation" aria-label="Main menu" class="navbar">
+      <img src="https://via.placeholder.com/100x40" alt="Accessible Design Co. logo" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Designing for Everyone</h1>
+      <p>Your inclusive digital future starts here.</p>
+      <button>Get Started</button>
+    </section>
+
+    <section class="about">
+      <h2>About Us</h2>
+      <p>We build accessible websites that work for everyone, on every device.</p>
+    </section>
+
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <article>
+          <img src="https://via.placeholder.com/80" alt="Web design icon">
+          <h3>Accessible Web Design</h3>
+          <p>Modern, inclusive, and WCAG-compliant websites.</p>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/80" alt="Audit icon">
+          <h3>Accessibility Audits</h3>
+          <p>We test and recommend improvements for your site.</p>
+        </article>
+        <article>
+          <img src="https://via.placeholder.com/80" alt="Training icon">
+          <h3>Team Training</h3>
+          <p>Upskill your developers and designers on best practices.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form aria-labelledby="contact-heading">
+        <label for="name">Name</label>
+        <input type="text" id="name" required aria-describedby="name-help">
+        <small id="name-help">Enter your full name.</small>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject">
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Accessible Design Co.</p>
+    <p>Follow us on <a href="#">Twitter</a> | <a href="#">LinkedIn</a></p>
+  </footer>
+
+</body>
+</html>
